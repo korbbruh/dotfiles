@@ -1,0 +1,11 @@
+.config/foot/colors.ini
+.config/waybar/colors.css
+.config/rofi/colors.rasi
+.config/mango/theme.conf
+.config/mako/config
+.config/cava/config
+.config/swayosd/style.css
+.config/swaylock/config
+.config/yazi/
+.config/btop/themes/current.theme
+.config/nvim/lua/plugins/theme.lua
