@@ -9,3 +9,4 @@
 .config/yazi/
 .config/btop/themes/current.theme
 .config/nvim/lua/plugins/theme.lua
+.config/fish
