@@ -10,3 +10,6 @@
 .config/btop/themes/current.theme
 .config/nvim/lua/plugins/theme.lua
 .config/fish
+.config/themes/*/backgrounds/
+.config/themes/*/unlock.png
+.config/themes/*/preview-unlock.png
