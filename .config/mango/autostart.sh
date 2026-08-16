@@ -11,17 +11,17 @@ systemctl --user start xwayland-satellite &
 
 # --- bar + notifications ---
 waybar -c ~/.config/mango/config.jsonc &
-mako >/dev/null 2>&1 &
+mako >/dev/null &
 
 # --- clipboard history (feeds clipboard.sh via cliphist) ---
-wl-clip-persist --clipboard regular --reconnect-tries 0 2>&1 &
-wl-paste --type text --watch cliphist store >/dev/null 2>&1 &
-wl-paste --type image --watch cliphist store >/dev/null 2>&1 &
+wl-clip-persist --clipboard regular --reconnect-tries 0 &
+wl-paste --type text --watch cliphist store >/dev/null &
+wl-paste --type image --watch cliphist store >/dev/null &
 
 # --- idle / lock / nightlight ---
 ~/.config/mango/bin/idle.sh &
 ~/.config/mango/bin/nightlight.sh &
-sway-audio-idle-inhibit >/dev/null 2>&1 & # don't idle while audio plays
+sway-audio-idle-inhibit >/dev/null & # don't idle while audio plays
 
 # --- wallpaper ---
 # Restore the last wallpaper; fall back to a default so you never cold-boot

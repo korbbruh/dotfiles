@@ -10,9 +10,9 @@ wpctl set-mute "$SRC" toggle
 
 # Read back the real state and show the matching OSD.
 if wpctl get-volume "$SRC" | grep -q MUTED; then
-  swayosd-client --custom-message "Mic muted" 2>/dev/null ||
+  swayosd-client --custom-message "Mic muted" --custom-icon microphone-disabled-symbolic 2>/dev/null ||
     swayosd-client --input-volume mute-toggle
 else
-  swayosd-client --custom-message "Mic on" 2>/dev/null ||
+  swayosd-client --custom-message "Mic on" --custom-icon microphone-sensitivity-high-symbolic 2>/dev/null ||
     swayosd-client --input-volume mute-toggle
 fi
