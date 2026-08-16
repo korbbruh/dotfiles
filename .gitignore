@@ -13,3 +13,11 @@
 .config/themes/*/backgrounds/
 .config/themes/*/unlock.png
 .config/themes/*/preview-unlock.png
+Pictures/
+nixos/
+nvidia-laptop-power-cfg/
+Downloads/
+Documents/
+.cache/
+.local/
+.mozilla/
