@@ -12,6 +12,9 @@
     "mango/window"
   ],
   "modules-center": [
+    "custom/dnd",
+    "custom/caffeine",
+    "custom/nightlight",
     "clock#horizontal",
   ],
   "modules-right": [
@@ -192,4 +195,22 @@
   "mango/language": {
   "format": "{short}",
   },
+  "custom/dnd": {
+  "exec": "~/.config/mango/waybar/indicators/ind-dnd.sh",
+  "interval": "once",
+  "signal": 8,
+  "return-type": "json"
+},
+"custom/caffeine": {
+  "exec": "~/.config/mango/waybar/indicators/ind-caffeine.sh",
+  "interval": "once",
+  "signal": 9,
+  "return-type": "json"
+},
+"custom/nightlight": {
+  "exec": "~/.config/mango/waybar/indicators/ind-nightlight.sh",
+  "interval": "once",
+  "signal": 10,
+  "return-type": "json"
+}, 
 }

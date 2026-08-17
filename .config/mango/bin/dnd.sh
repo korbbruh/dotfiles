@@ -20,4 +20,4 @@ else
 fi
 
 # refresh the waybar DND indicator immediately (signal 10)
-pkill -RTMIN+10 waybar 2>/dev/null || true
+pkill -SIGRTMIN+8 waybar

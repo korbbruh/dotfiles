@@ -16,4 +16,4 @@ else
 fi
 
 # refresh the waybar nightlight indicator immediately (signal 11)
-pkill -RTMIN+11 waybar 2>/dev/null || true
+pkill -SIGRTMIN+10 waybar

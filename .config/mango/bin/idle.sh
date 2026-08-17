@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 # ~/.config/mango/bin/idle.sh
-# swayidle's -w flag fails against systemd 261 (BlockInhibited parse error),
-# so before-sleep fires without waiting. Small race where the screen could
-# sleep before the lock renders; acceptable given this machine autologins.
 LOCK="swaylock -f"
 PANEL="eDP-1"
 exec swayidle \
