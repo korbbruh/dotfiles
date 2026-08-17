@@ -70,7 +70,7 @@
     "tooltip-format-wifi": "{essid} ({frequency} GHz)",
     "tooltip-format-ethernet": "Connected",
     "tooltip-format-disconnected": "Disconnected",
-    "interval": 3,
+    "interval": 10,
     "spacing": 1,
     "on-click": "foot --app-id=wifi-float nmtui"
   },
@@ -157,18 +157,12 @@
   "custom/cpu-temp": {
     "exec": "sensors -j k10temp-pci-00c3 | jq '.\"k10temp-pci-00c3\".Tctl.temp1_input | floor'",
     "format": "󰔏 {}°C",
-    "interval": 5,
+    "interval": 15,
     "tooltip": false
   },
   "custom/sep": {
     "format": "|",
     "interval": 0
-  },
-   "custom/power": {
-    "format": " 󰤆 ",
-    "tooltip": true,
-    "tooltip-format": "Power Menu",
-    "on-click": "wlogout"
   },
   //"mango/workspaces": {
   //    "format": "{icon}",
