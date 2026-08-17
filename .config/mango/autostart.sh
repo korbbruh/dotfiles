@@ -1,5 +1,6 @@
-#!/bin/sh
-# ~/.config/mango/autostart.sh
+#!/usr/bin/env bash
+# SUPERSEDED: idle management now lives in systemd.user.services.swayidle
+# in ~/nixos/configuration.nix. Editing this file does nothing.
 
 #lockscreen
 #swaylock &
