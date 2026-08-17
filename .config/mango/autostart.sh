@@ -19,7 +19,8 @@ wl-paste --type text --watch cliphist store >/dev/null &
 wl-paste --type image --watch cliphist store >/dev/null &
 
 # --- idle / lock / nightlight ---
-~/.config/mango/bin/idle.sh &
+systemctl --user start swayidle
+#~/.config/mango/bin/idle.sh &
 ~/.config/mango/bin/nightlight.sh &
 sway-audio-idle-inhibit >/dev/null & # don't idle while audio plays
 
