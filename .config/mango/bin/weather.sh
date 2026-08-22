@@ -3,10 +3,15 @@
 # wttr.in weather for waybar. Weather-code mapping and day/night icon
 # switching adapted from omarchy-weather-icon.
 
-data=$(curl -fsS --max-time 5 "https://wttr.in/Tacloban?format=j1" 2>/dev/null) || {
+for i in 1 2 3; do
+  data=$(curl -fsS --max-time 5 "https://wttr.in/Tacloban?format=j1" 2>/dev/null) && break
+  sleep 5
+done
+
+if [ -z "$data" ]; then
   printf '{"text":"","class":"unavailable"}\n'
   exit 0
-}
+fi
 
 fields=$(echo "$data" | jq -er '[
   .current_condition[0].weatherCode,

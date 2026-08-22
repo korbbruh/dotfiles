@@ -194,7 +194,9 @@
   "exec": "~/.config/mango/bin/weather.sh",
   "return-type": "json",
   "interval": 1800,
-  "tooltip": true
+  "signal": 11,
+  "tooltip": true,
+  "on-click": "pkill -SIGRTMIN+11 waybar"
 },
   "custom/dnd": {
   "exec": "~/.config/mango/waybar/indicators/ind-dnd.sh",
