@@ -12,9 +12,9 @@
     "mango/window"
   ],
   "modules-center": [
-    "custom/dnd",
-    "custom/caffeine",
     "custom/nightlight",
+    "custom/caffeine",
+    "custom/dnd",
     "clock#horizontal",
   ],
   "modules-right": [
@@ -72,7 +72,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 10,
     "spacing": 1,
-    "on-click": "foot --app-id=wifi-float nmtui"
+    "on-click": "foot --app-id=wifi-float impala"
   },
   "battery": {
     "format": "{capacity}% {icon}",
