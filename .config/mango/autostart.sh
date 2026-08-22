@@ -6,8 +6,8 @@
 #swaylock &
 
 # --- environment ---
-systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-systemctl --user start mango-session.target
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &
+systemctl --user start mango-session.target &
 systemctl --user start polkit-kde-agent &
 systemctl --user start swayosd &
 systemctl --user start xwayland-satellite &
@@ -22,7 +22,7 @@ wl-paste --type text --watch cliphist store >/dev/null &
 wl-paste --type image --watch cliphist store >/dev/null &
 
 # --- idle / lock / nightlight ---
-systemctl --user start swayidle
+systemctl --user start swayidle &
 #~/.config/mango/bin/idle.sh &
 #~/.config/mango/bin/nightlight.sh &
 sway-audio-idle-inhibit >/dev/null & # don't idle while audio plays
