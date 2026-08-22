@@ -21,3 +21,4 @@ Documents/
 .cache/
 .local/
 .mozilla/
+*.hm-bak
