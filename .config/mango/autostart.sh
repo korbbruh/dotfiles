@@ -6,6 +6,8 @@
 #swaylock &
 
 # --- environment ---
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+systemctl --user start mango-session.target
 systemctl --user start polkit-kde-agent &
 systemctl --user start swayosd &
 systemctl --user start xwayland-satellite &
