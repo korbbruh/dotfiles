@@ -6,6 +6,7 @@
   "height": 26,
   "width": 0,
   "modules-left": [
+    "custom/distro",
     "ext/workspaces",
     "mango/layout",
     "mango/window"
@@ -67,6 +68,11 @@
         "today": "<span background='#e5e5e5' color='#000000'><b>{}</b></span>"
       }
     }
+  },
+  "custom/distro": {
+    "format": " ",
+    "tooltip": false,
+    "on-click": "rofi -show drun -theme ~/.config/rofi/kev.rasi" // Optional: Click it to open your app launcher
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
