@@ -20,9 +20,9 @@ pick_with_rofi() {
     find "$WALL_DIR" -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \) |
       sort |
       while IFS= read -r f; do
-        printf '%s\0icon\x1fthumbnail://%s\n' "$(basename "$f")" "$f"
+        printf '%s\0icon\x1f%s\n' "$(basename "$f")" "$f"
       done |
-      rofi -dmenu -show-icons -p "wallpaper"
+      rofi -dmenu -show-icons -p "wallpaper" -theme ~/.config/rofi/picker.rasi
   )
   [ -z "$pick" ] && return 0
   # map basename back to a full path (first match under WALL_DIR)

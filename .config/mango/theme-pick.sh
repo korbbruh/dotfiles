@@ -29,7 +29,7 @@ pick_theme() {
     else
       printf '%s\n' "$name"
     fi
-  done | rofi -dmenu -show-icons -p "theme"
+  done | rofi -dmenu -show-icons -p "wallpaper" -theme ~/.config/rofi/picker.rasi
 }
 
 case "${1:-}" in
