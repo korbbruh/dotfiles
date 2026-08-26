@@ -21,4 +21,5 @@ Documents/
 .cache/
 .local/
 .mozilla/
+.config/nvim/lua/plugins/theme.lua
 *.hm-bak
